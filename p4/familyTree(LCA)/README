@@ -1,0 +1,11 @@
+Vincent Chau & Kevin Chan
+ECS60 P4
+
+Given generations of families, and two queries. Find their least common ancestor.
+
+Algorithm:
+1.Stored into a hash table, with our hash function using the first 4 letters of a person's last name and first name. We used bitshifted left in our hash function to reduce arthmetic operations and improve it's performance.
+2.Store the two queries and their parent's into two queues
+3.Call qsort to sort by year
+4.Pop off queues and compare
+5.Store LCA in answers array

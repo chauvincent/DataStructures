@@ -1,0 +1,116 @@
+After all insertions.
+Internal: 1 10 
+Internal: 1 4 7 
+Internal: 10 13 16 
+Leaf: 1 2 3 
+Leaf: 4 5 6 
+Leaf: 7 8 9 
+Leaf: 10 11 12 
+Leaf: 13 14 15 
+Leaf: 16 17 18 
+Deleting 1. 
+Internal: 2 10 
+Internal: 2 4 7 
+Internal: 10 13 16 
+Leaf: 2 3 
+Leaf: 4 5 6 
+Leaf: 7 8 9 
+Leaf: 10 11 12 
+Leaf: 13 14 15 
+Leaf: 16 17 18 
+Deleting 2. 
+Internal: 3 10 
+Internal: 3 5 7 
+Internal: 10 13 16 
+Leaf: 3 4 
+Leaf: 5 6 
+Leaf: 7 8 9 
+Leaf: 10 11 12 
+Leaf: 13 14 15 
+Leaf: 16 17 18 
+Deleting 3. 
+Internal: 4 10 
+Internal: 4 7 
+Internal: 10 13 16 
+Leaf: 4 5 6 
+Leaf: 7 8 9 
+Leaf: 10 11 12 
+Leaf: 13 14 15 
+Leaf: 16 17 18 
+Deleting 4. 
+Internal: 5 10 
+Internal: 5 7 
+Internal: 10 13 16 
+Leaf: 5 6 
+Leaf: 7 8 9 
+Leaf: 10 11 12 
+Leaf: 13 14 15 
+Leaf: 16 17 18 
+Deleting 5. 
+Internal: 6 10 
+Internal: 6 8 
+Internal: 10 13 16 
+Leaf: 6 7 
+Leaf: 8 9 
+Leaf: 10 11 12 
+Leaf: 13 14 15 
+Leaf: 16 17 18 
+Deleting 6. 
+Internal: 7 13 
+Internal: 7 10 
+Internal: 13 16 
+Leaf: 7 8 9 
+Leaf: 10 11 12 
+Leaf: 13 14 15 
+Leaf: 16 17 18 
+Deleting 7. 
+Internal: 8 13 
+Internal: 8 10 
+Internal: 13 16 
+Leaf: 8 9 
+Leaf: 10 11 12 
+Leaf: 13 14 15 
+Leaf: 16 17 18 
+Deleting 8. 
+Internal: 9 13 
+Internal: 9 11 
+Internal: 13 16 
+Leaf: 9 10 
+Leaf: 11 12 
+Leaf: 13 14 15 
+Leaf: 16 17 18 
+Deleting 9. 
+Internal: 10 13 16 
+Leaf: 10 11 12 
+Leaf: 13 14 15 
+Leaf: 16 17 18 
+Deleting 10. 
+Internal: 11 13 16 
+Leaf: 11 12 
+Leaf: 13 14 15 
+Leaf: 16 17 18 
+Deleting 11. 
+Internal: 12 14 16 
+Leaf: 12 13 
+Leaf: 14 15 
+Leaf: 16 17 18 
+Deleting 12. 
+Internal: 13 16 
+Leaf: 13 14 15 
+Leaf: 16 17 18 
+Deleting 13. 
+Internal: 14 16 
+Leaf: 14 15 
+Leaf: 16 17 18 
+Deleting 14. 
+Internal: 15 17 
+Leaf: 15 16 
+Leaf: 17 18 
+Deleting 15. 
+Leaf: 16 17 18 
+Deleting 16. 
+Leaf: 17 18 
+Deleting 17. 
+Leaf: 18 
+Deleting 18. 
+Leaf: 
