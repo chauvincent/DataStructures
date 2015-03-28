@@ -1,10 +1,12 @@
 // Author: Vincent Chau && Kevin Chan
 // ECS 60
 // Program 4 familytree.cpp
+
 #include <cstdlib>
 #include <cstring>
 #include <iostream>
 #include "familytree.h"
+
 using namespace std;
 
 FamilyTree::FamilyTree(Family *families, int familyCount) : hashTable(familyCount * 3)
@@ -177,5 +179,4 @@ void FamilyTree::runQueries(Query *queries, Person *answers, int queryCount)
   	}
 
 }  
-
 

@@ -9,7 +9,7 @@ class YearIndex
   		
   		short year;
 
-		int index;
+		  int index;
   
   		YearIndex(short y = 0, int i = 0) : year(y), index(i) {}
 }; 

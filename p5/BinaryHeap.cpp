@@ -1,6 +1,5 @@
         #include "BinaryHeap.h"
-        #include "familytree.h"
-        #include "QuadraticProbing.h"
+
         /**
          * Construct the binary heap.
          * capacity is the capacity of the binary heap.
@@ -17,16 +16,16 @@
          * Throw Overflow if container is full.
          */
         template <class Comparable>
-        void BinaryHeap<Comparable>::insert( const Comparable & x )
+        void BinaryHeap<Comparable>::insert( Comparable & x)
         {
-           // if( isFull( ) )
-             //   throw Overflow( );
+            if( isFull( ) )
+                throw Overflow( );
 
                 // Percolate up
             int hole = ++currentSize;
-            for( ; hole > 1 && x.year < array[ hole / 2 ].year; hole /= 2 )
+            for( ; hole > 1 && x.ratio > array[ hole / 2 ].ratio; hole /= 2 )
                 array[ hole ] = array[ hole / 2 ];
-            array[ hole ] = x;
+            array[ hole ] = x; 
         }
 
         /**
@@ -34,11 +33,13 @@
          * Return the smallest item, or throw Underflow if empty.
          */
         template <class Comparable>
-        const Comparable & BinaryHeap<Comparable>::findMin( ) const
+        const Comparable & BinaryHeap<Comparable>::findMax( ) const
         {
-          //  if( isEmpty( ) )
-           //     throw Underflow( );
+            if( isEmpty( ) )
+                throw Underflow( );
+
             return array[ 1 ];
+        
         }
 
         /**
@@ -46,10 +47,10 @@
          * Throw Underflow if empty.
          */
         template <class Comparable>
-        void BinaryHeap<Comparable>::deleteMin( )
+        void BinaryHeap<Comparable>::deleteMax( )
         {
-        //    if( isEmpty( ) )
-          //      throw Underflow( );
+            if( isEmpty( ) )
+                throw Underflow( );
 
             array[ 1 ] = array[ currentSize-- ];
             percolateDown( 1 );
@@ -60,12 +61,12 @@
          * and place it in minItem. Throw Underflow if empty.
          */
         template <class Comparable>
-        void BinaryHeap<Comparable>::deleteMin( Comparable & minItem )
+        void BinaryHeap<Comparable>::deleteMax( Comparable & maxItem )
         {
-          //  if( isEmpty( ) )
-            //    throw Underflow( );
+           if( isEmpty( ) )
+                throw Underflow( );
 
-            minItem = array[ 1 ];
+            maxItem = array[ 1 ];
             array[ 1 ] = array[ currentSize-- ];
             percolateDown( 1 );
         }
@@ -123,9 +124,9 @@
 /* 3*/      for( ; hole * 2 <= currentSize; hole = child )
             {
 /* 4*/          child = hole * 2;
-/* 5*/          if( child != currentSize && array[ child + 1 ].year < array[ child ].year )
+/* 5*/          if( child != currentSize && array[ child + 1 ].ratio > array[ child ].ratio )
 /* 6*/              child++;
-/* 7*/          if( array[ child ].year < tmp.year )
+/* 7*/          if( array[ child ].ratio > tmp.ratio )
 /* 8*/              array[ hole ] = array[ child ];
                 else
 /* 9*/              break;
