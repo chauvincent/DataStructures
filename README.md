@@ -1,4 +1,5 @@
 # ECS60
+Vincent Chau && Kevin Chan
 
 ECS 60 Winter Quarter 2015 Lecturer Sean Davis Programming Assignments 1-5
 
